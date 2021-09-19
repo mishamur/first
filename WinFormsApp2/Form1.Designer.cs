@@ -37,6 +37,8 @@ namespace WinFormsApp2
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxK = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -108,11 +110,30 @@ namespace WinFormsApp2
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(454, 255);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(25, 15);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "K =";
+            // 
+            // textBoxK
+            // 
+            this.textBoxK.Location = new System.Drawing.Point(486, 246);
+            this.textBoxK.Name = "textBoxK";
+            this.textBoxK.ReadOnly = true;
+            this.textBoxK.Size = new System.Drawing.Size(100, 23);
+            this.textBoxK.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxK);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -138,6 +159,8 @@ namespace WinFormsApp2
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxK;
     }
 }
 

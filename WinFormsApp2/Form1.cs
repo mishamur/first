@@ -33,6 +33,9 @@ namespace WinFormsApp2
             double r = a * b;
             r = Math.Round(r, 5);
             textBox4.Text = r.ToString();
+
+            int k = Math.Abs((int)((r * 10) % 10));
+            textBoxK.Text = k.ToString();
         }
     }
 }

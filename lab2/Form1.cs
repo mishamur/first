@@ -50,7 +50,7 @@ namespace lab2
             }
             else if (((x * y) > 0.1) && ((x * y) < 0.5))
             {
-                result = Math.Round(Math.Sqrt(fx + y), 4);
+                result = Math.Round(Math.Sqrt(Math.Abs(fx + y)), 4);
                 textBox4.Text = result.ToString(); //"Сработало второе условие";
             }
             else
@@ -69,6 +69,11 @@ namespace lab2
             RadioButton radioButton = (RadioButton)sender;
             this.rbName = radioButton.Name;
             //textBox4.Text = this.rbName.ToString();
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -83,6 +83,7 @@ namespace lab2
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(159, 23);
             this.textBox4.TabIndex = 6;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label4
             // 

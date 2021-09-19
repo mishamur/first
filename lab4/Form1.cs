@@ -22,6 +22,7 @@ namespace lab4
             
 
             List<char> list = new List<char>();
+
             
 
             for(int i = 0; i < n; i++)
@@ -36,6 +37,10 @@ namespace lab4
                 }
                 Console.WriteLine();
             }
+
+            //переворот list`a
+            //char[] tempList = list.ToArray();
+            //Array.Reverse(tempList);
 
             textBoxAnswer.Text = list.Count.ToString();
 
